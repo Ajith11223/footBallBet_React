@@ -88,14 +88,14 @@ const HomePage = () => {
 
                 </div>
 
-                {/* match area */}
+                {/* match area ================== */}
                 <div className="match">
                     <div className="head">
                         <img src={football} style={{ width: "25px", height: "25px" }} alt="" />
                         <span>Foot Ball</span>
                     </div>
 
-                    {/*match table area */}
+                    {/*match table area ===============*/}
 
                     <div className="table">
                         {
@@ -106,13 +106,12 @@ const HomePage = () => {
                                             <p>{item[0]}</p><p>ileague</p>
                                         </div>
                                         {item[1].map((i) => {
-                                            const time = new Date(i.MatchDate).toLocaleTimeString()
-
+                                        
                                             return (
                                                 <>
                                                     <div className="play" onClick={() => matchId(i.MatchId)}>
                                                         <p style={{ margin: "10px" }}>{i.Team1Name}</p>
-                                                        <p>{time}</p>
+                                                        <p>{i.MatchTime}</p>
                                                         <p style={{ margin: "10px" }}>{i.Team2Name}</p>
                                                     </div>
                                                     <hr />

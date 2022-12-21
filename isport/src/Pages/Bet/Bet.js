@@ -113,7 +113,7 @@ const Bet = () => {
         <div className="gap">
         </div>
 
-        {/* match detail */}
+        {/* match detail================= */}
         {
           match.map((item) => {
             let d = new Date(item.MatchDate)
@@ -131,7 +131,7 @@ const Bet = () => {
         }
 
 
-        {/* // selection area */}
+        {/* // selection area  ==========================*/}
         <div className='selection'>
           <span>Select Market list :</span>
           <select className='opt' onChange={click}>
@@ -149,7 +149,7 @@ const Bet = () => {
             }
           </select>
 
-          {/* leg details */}
+          {/* leg details ======================*/}
 
           <span>Legs      :</span>
           <select className='opt' onChange={click1}>
@@ -168,7 +168,7 @@ const Bet = () => {
           </select>
         </div>
 
-        {/* output table  */}
+        {/* output table =============== */}
 
         <div className="result">
           <h2 style={{ padding: "20px" }}>Bet Builders Odds :<span style={{ color: "red" }}>{bet.TotalOdds}</span> </h2>
